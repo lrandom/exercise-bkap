@@ -46,6 +46,7 @@ $rs = mysqli_query($conn, "SELECT *,sinh_vien.id as sinh_vien_id,sinh_vien.name 
                         } ?></td>
                     <td>
                         <a href="delete.php?id=<?php echo $sinhvien['sinh_vien_id']; ?>">Xoa</a>
+                        <a href="edit.php?id=<?php echo $sinhvien['sinh_vien_id']; ?>">Sua</a>
                     </td>
                 </tr>
             <?php endwhile ?>
